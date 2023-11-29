@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="stylesheet" href="./css/modal.css">
+  <link rel="stylesheet" href="./css/texto.css">
+  <link rel="stylesheet" href="./css/drag.css">
+  <link rel="stylesheet" href="./css/hoovertext.css">
+  <link rel="stylesheet" type="text/css" href="csshake.css" />
+
+</head>
+
+<body>
+  <div class="slideshow-container">
+    <!-- escena uno -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./imagenes/fondoo  copia4.png" style="width:100%">
+      <div class="text">Caption Text</div>
+
+      <div><img class="sol" src="./imagenes/sol.png" alt=""></div>
+      <div><img class="nubes" src="./imagenes/nubes.png" alt=""></div>
+      <div><img class="planta shake shake-little" src="./imagenes/planta.png" alt=""></div>
+      <div>
+        <!-- <h2>Animated Modal with Header and Footer</h2> -->
+        <button id="myBtn">Open Modal</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Modal Header</h2>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the Modal Body</p>
+              <p>Some other text...</p>
+            </div>
+            <div class="modal-footer">
+              <h3>Modal Footer</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="texto_1">
+        <p class="uno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, omnis exercitationem commodi
+          eos ipsam, ex dolores vero ullam quibusdam, dicta repellendus maxime officia nisi! Voluptates libero commodi
+          doloribus incidunt doloremque.</p>
+
+      </div>
+    </div>
+
+    <!-- escena dos -->
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="./imagenes/fondo_animacion.png" style="width:100%">
+      <div class="text">Caption Two</div>
+            
+      <div id="draggable-object" draggable="true"></div>
+      <div id="drop-point"></div>
+
+      <article>
+        <img class="title" src="./imagenes/sol.png" alt="">
+       <!--  <h2 class="title">
+          Hover para mostrar contenido
+        </h2>       -->
+        <div class="contenido">
+          <div>
+            <p>Este contenido sólo se ve al hacer hover en el título. Y lo hace con una animación.<br><br>Normalmente no se puede animar una altura automáticamente al contenido, pero con este truco se puede hacer sin problemas.<br><br></p>
+          </div>
+        </div>
+          
+
+         
+    </div>
+      <!-- escena tres -->
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="./imagenes/fondo_animacion3.png" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+    </div>
+
+
+    <!-- botones -->
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script src="./js/eventos.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/dragAndDrop..js"></script>
+  
+
+</body>
+
+</html>
